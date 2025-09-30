@@ -43,7 +43,7 @@ The database is designed to support:
 
 1. Database Creation
 
-```CREATE DATABASE ecommerce_db;
+```CREATE DATABASE ecommerce_db;```
 
 2. Tables with Constraints
 
@@ -59,7 +59,7 @@ The database is designed to support:
 INSERT INTO Products (sku, name, price, active) VALUES ('P001', 'Smartphone X', 699.99, TRUE);
 INSERT INTO Orders (user_id, order_number, order_status) VALUES (1, 'ORD12345', 'Pending');
 INSERT INTO Payments (order_id, payment_method, amount, currency, status) 
-VALUES (1, 'Credit Card', 699.99, 'USD', 'Completed');
+VALUES (1, 'Credit Card', 699.99, 'USD', 'Completed');```
 
 # 🚀 How to Run
 
