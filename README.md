@@ -37,7 +37,8 @@ The database is designed to support:
 
 * Admins → Manage users and products.
 
-📎 See ER Diagram (attached in A_relational_database_Entity-Relationship_(ER)_dia.png).
+📎 See Relational Database Diagram below:
+![Relational Database Diagram](relational_db_diagram.png)
 
 # ⚙️ Features Implemented
 
