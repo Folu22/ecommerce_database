@@ -43,8 +43,9 @@ The database is designed to support:
 
 1. Database Creation
 
-``` sql
-CREATE DATABASE ecommerce_db;```
+``` sql 
+CREATE DATABASE ecommerce_db; 
+``` 
 
 2. Tables with Constraints
 
@@ -61,18 +62,22 @@ INSERT INTO Users (name, email) VALUES ('Alice Johnson', 'alice@example.com');
 INSERT INTO Products (sku, name, price, active) VALUES ('P001', 'Smartphone X', 699.99, TRUE);
 INSERT INTO Orders (user_id, order_number, order_status) VALUES (1, 'ORD12345', 'Pending');
 INSERT INTO Payments (order_id, payment_method, amount, currency, status) 
-VALUES (1, 'Credit Card', 699.99, 'USD', 'Completed');```
+VALUES (1, 'Credit Card', 699.99, 'USD', 'Completed');
+```
 
 # 🚀 How to Run
 
 1. Open MySQL Workbench or CLI.
 2. Run the provided SQL script:
 
-```source ecommerce_db.sql;```
+```
+source ecommerce_db.sql;
+```
 
 3. Verify tables:
-```sql
-SHOW TABLES;```
+``` sql
+SHOW TABLES;
+```
 
 4. Insert test data (included in script).
 
@@ -84,7 +89,8 @@ FROM Users u
 JOIN Orders o ON u.user_id = o.user_id
 JOIN Payments pay ON o.order_id = pay.order_id
 JOIN Order_Items oi ON o.order_id = oi.order_id
-JOIN Products p ON oi.product_id = p.product_id;```
+JOIN Products p ON oi.product_id = p.product_id;
+```
 
 # 📂 Deliverables
 
@@ -92,6 +98,6 @@ JOIN Products p ON oi.product_id = p.product_id;```
 
 * README.md → Documentation (this file)
 
-* ER_Diagram.png → Database structure illustration
+* relational_db_diagram.png → Database structure illustration
 
 ✅ This project demonstrates a complete Database Management System using MySQL with proper schema design, normalization, and constraints.
