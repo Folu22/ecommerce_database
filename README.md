@@ -43,7 +43,8 @@ The database is designed to support:
 
 1. Database Creation
 
-```CREATE DATABASE ecommerce_db;```
+``` sql
+CREATE DATABASE ecommerce_db;```
 
 2. Tables with Constraints
 
@@ -55,7 +56,8 @@ The database is designed to support:
 
 3. Sample Data Insertions
 
-```INSERT INTO Users (name, email) VALUES ('Alice Johnson', 'alice@example.com');
+``` sql
+INSERT INTO Users (name, email) VALUES ('Alice Johnson', 'alice@example.com');
 INSERT INTO Products (sku, name, price, active) VALUES ('P001', 'Smartphone X', 699.99, TRUE);
 INSERT INTO Orders (user_id, order_number, order_status) VALUES (1, 'ORD12345', 'Pending');
 INSERT INTO Payments (order_id, payment_method, amount, currency, status) 
@@ -69,13 +71,15 @@ VALUES (1, 'Credit Card', 699.99, 'USD', 'Completed');```
 ```source ecommerce_db.sql;```
 
 3. Verify tables:
-```SHOW TABLES;```
+```sql
+SHOW TABLES;```
 
 4. Insert test data (included in script).
 
 5. Run queries, e.g.:
 
-```SELECT u.name, o.order_number, p.name AS product, pay.amount
+```sql
+SELECT u.name, o.order_number, p.name AS product, pay.amount
 FROM Users u
 JOIN Orders o ON u.user_id = o.user_id
 JOIN Payments pay ON o.order_id = pay.order_id
