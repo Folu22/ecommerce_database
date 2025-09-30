@@ -35,7 +35,7 @@ The database is designed to support:
 
 * Inventory → Tracks stock levels.
 
-A* dmins → Manage users and products.
+* Admins → Manage users and products.
 
 📎 See ER Diagram (attached in A_relational_database_Entity-Relationship_(ER)_dia.png).
 
@@ -65,10 +65,11 @@ VALUES (1, 'Credit Card', 699.99, 'USD', 'Completed');
 
 1. Open MySQL Workbench or CLI.
 2. Run the provided SQL script:
-```source ecommerce_db.sql;
+
+```source ecommerce_db.sql;```
 
 3. Verify tables:
-```SHOW TABLES;
+```SHOW TABLES;```
 
 4. Insert test data (included in script).
 
@@ -79,7 +80,7 @@ FROM Users u
 JOIN Orders o ON u.user_id = o.user_id
 JOIN Payments pay ON o.order_id = pay.order_id
 JOIN Order_Items oi ON o.order_id = oi.order_id
-JOIN Products p ON oi.product_id = p.product_id;
+JOIN Products p ON oi.product_id = p.product_id;```
 
 # 📂 Deliverables
 
